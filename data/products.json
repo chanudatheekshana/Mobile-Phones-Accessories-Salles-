@@ -1,0 +1,415 @@
+{
+  "currency": "Rs.",
+  "whatsappNumber": "94775132961",
+  "callNumber": "+94775132961",
+  "shopEmail": "mohamedanfas974@gmail.com",
+  "shopAddress": "Court Complex, Side Kada 12, Anuradhapura, Sri Lanka",
+  "openingHours": {
+    "weekdays": "Mon - Sat: 9:00 AM - 8:30 PM",
+    "sunday": "Sunday: 9:00 AM - 8:30 PM"
+  },
+  "phones": [
+    {
+      "id": "iphone-15-pro-max",
+      "name": "Apple iPhone 15 Pro Max",
+      "brand": "Apple",
+      "condition": "New",
+      "price": 385000,
+      "specs": ["6.7\" Super Retina XDR 120Hz", "256GB / A17 Pro Chip", "48MP 5x Optical Zoom Camera"],
+      "stock": "in_stock",
+      "badge": "Flagship",
+      "image": "assets/images/phones/iphone-15-pro-max.svg"
+    },
+    {
+      "id": "samsung-s24-ultra",
+      "name": "Samsung Galaxy S24 Ultra",
+      "brand": "Samsung",
+      "condition": "New",
+      "price": 395000,
+      "specs": ["6.8\" QHD+ Dynamic AMOLED 2X", "512GB / Snapdragon 8 Gen 3", "200MP Quad Camera + Built-in S-Pen"],
+      "stock": "in_stock",
+      "badge": "AI Powered",
+      "image": "assets/images/phones/samsung-s24-ultra.svg"
+    },
+    {
+      "id": "samsung-galaxy-a15",
+      "name": "Samsung Galaxy A15",
+      "brand": "Samsung",
+      "condition": "New",
+      "price": 85000,
+      "specs": ["6.5\" Super AMOLED 90Hz", "128GB / 6GB RAM", "50MP Triple Camera / 5000mAh"],
+      "stock": "in_stock",
+      "badge": "Best Seller",
+      "image": "assets/images/phones/samsung-galaxy-a15.svg"
+    },
+    {
+      "id": "iphone-13-used",
+      "name": "Apple iPhone 13",
+      "brand": "Apple",
+      "condition": "Used",
+      "price": 178000,
+      "specs": ["6.1\" OLED Display", "128GB / A15 Bionic", "92% Battery Health / Mint Condition"],
+      "stock": "low_stock",
+      "badge": "Pre-Owned Grade A",
+      "image": "assets/images/phones/iphone-13-used.svg"
+    },
+    {
+      "id": "xiaomi-14",
+      "name": "Xiaomi 14 5G",
+      "brand": "Xiaomi",
+      "condition": "New",
+      "price": 245000,
+      "specs": ["6.36\" 1.5K LTPO 120Hz", "256GB / 12GB RAM", "Leica 50MP Triple / 90W HyperCharge"],
+      "stock": "in_stock",
+      "badge": "Leica Optics",
+      "image": "assets/images/phones/xiaomi-14.svg"
+    },
+    {
+      "id": "poco-x6-pro",
+      "name": "Poco X6 Pro 5G",
+      "brand": "Poco",
+      "condition": "New",
+      "price": 122000,
+      "specs": ["6.67\" Flow AMOLED 120Hz", "256GB / 8GB RAM", "Dimensity 8300-Ultra / 64MP OIS"],
+      "stock": "in_stock",
+      "badge": "Gaming Beast",
+      "image": "assets/images/phones/poco-x6-pro.svg"
+    },
+    {
+      "id": "redmi-note-13-pro",
+      "name": "Redmi Note 13 Pro 4G",
+      "brand": "Redmi",
+      "condition": "New",
+      "price": 94000,
+      "specs": ["6.67\" AMOLED 120Hz", "256GB / 8GB RAM", "200MP OIS Camera / 67W Turbo Charge"],
+      "stock": "in_stock",
+      "badge": "Popular",
+      "image": "assets/images/phones/redmi-note-13-pro.svg"
+    },
+    {
+      "id": "samsung-s22-plus-used",
+      "name": "Samsung Galaxy S22+ 5G",
+      "brand": "Samsung",
+      "condition": "Used",
+      "price": 148000,
+      "specs": ["6.6\" Dynamic AMOLED 2X", "256GB / 8GB RAM", "Pristine Box & Accessories / 95% Battery"],
+      "stock": "low_stock",
+      "badge": "Certified Used",
+      "image": "assets/images/phones/samsung-s22-plus-used.svg"
+    },
+    {
+      "id": "vivo-v30-5g",
+      "name": "Vivo V30 5G",
+      "brand": "Vivo",
+      "condition": "New",
+      "price": 159000,
+      "specs": ["6.78\" 3D Curved 1.5K AMOLED", "256GB / 12GB Extended RAM", "Aura Light Portrait 50MP OIS"],
+      "stock": "in_stock",
+      "badge": "Portrait Pro",
+      "image": "assets/images/phones/vivo-v30-5g.svg"
+    },
+    {
+      "id": "iphone-14-pro-used",
+      "name": "Apple iPhone 14 Pro",
+      "brand": "Apple",
+      "condition": "Used",
+      "price": 245000,
+      "specs": ["Dynamic Island 120Hz Display", "128GB / Space Black", "Full Warranty / 89% Battery"],
+      "stock": "out_of_stock",
+      "badge": "Pre-Owned",
+      "image": "assets/images/phones/iphone-14-pro-used.svg"
+    }
+  ],
+  "accessories": [
+    {
+      "id": "apple-20w-usb-c-adapter",
+      "name": "Apple 20W USB-C Power Adapter",
+      "brand": "Apple",
+      "condition": "New",
+      "price": 8500,
+      "specs": ["Original 20W Fast Charging", "USB-C Output Interface", "Overcharge & Heat Protection"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/apple-20w-adapter.svg"
+    },
+    {
+      "id": "samsung-25w-super-fast-charger",
+      "name": "Samsung 25W Super Fast Charger",
+      "brand": "Samsung",
+      "condition": "New",
+      "price": 7900,
+      "specs": ["PD 3.0 PPS Technology", "Includes 3A Type-C to C Cable", "Official Samsung Warranty"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/samsung-25w-charger.svg"
+    },
+    {
+      "id": "baseus-65w-gan5-pro-charger",
+      "name": "Baseus 65W GaN5 Pro Fast Charger",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 14500,
+      "specs": ["3 Ports: 2x Type-C + 1x USB-A", "Charges Laptops, Tablets & Phones", "GaN5 Ultra Compact Technology"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/baseus-65w-charger.svg"
+    },
+    {
+      "id": "anker-powercore-20000mah",
+      "name": "Anker 325 PowerCore 20,000mAh",
+      "brand": "Soundcore",
+      "condition": "New",
+      "price": 16500,
+      "specs": ["20,000mAh Massive Capacity", "PowerIQ Fast Charge Dual USB", "MultiProtect Safety System"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/anker-powerbank-20000.svg"
+    },
+    {
+      "id": "magsafe-wireless-charger",
+      "name": "Magnetic 15W Wireless Fast Charger",
+      "brand": "Apple",
+      "condition": "New",
+      "price": 6800,
+      "specs": ["Strong Neodymium Magnet Snap", "15W Qi Wireless Fast Charging", "Braided 1.2m Type-C Cable"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/magsafe-charger.svg"
+    },
+    {
+      "id": "baseus-braided-cable-100w",
+      "name": "Baseus Cafule 100W PD Type-C Cable",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 3200,
+      "specs": ["100W 5A E-Marker Chip", "High Density Nylon Braided", "480Mbps Fast Data Sync"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/baseus-cable-100w.svg"
+    },
+    {
+      "id": "premium-privacy-tempered-glass",
+      "name": "9D Privacy Anti-Spy Tempered Glass",
+      "brand": "Oms",
+      "condition": "New",
+      "price": 2200,
+      "specs": ["28° Anti-Peeping Privacy Filter", "9H Hardness Edge-to-Edge", "Oleophobic Anti-Fingerprint Coat"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/privacy-tempered-glass.svg"
+    },
+    {
+      "id": "magsafe-clear-armored-case",
+      "name": "MagSafe Shockproof Armor Case",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 4500,
+      "specs": ["Anti-Yellowing Optical Bayer TPU", "Military Grade Drop Protection", "Built-in 38x N52 Magnets"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/magsafe-clear-case.svg"
+    },
+    {
+      "id": "baseus-magnetic-car-mount",
+      "name": "Baseus MagSafe Air Vent Car Mount",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 5400,
+      "specs": ["360° Rotatable Ball Joint", "Super Strong Magnetic Grip", "Stable Clamp with Silicone Pads"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/baseus-car-mount.svg"
+    },
+    {
+      "id": "camera-lens-protector-sapphire",
+      "name": "Sapphire Glass Camera Lens Ring (Set)",
+      "brand": "Oms",
+      "condition": "New",
+      "price": 2800,
+      "specs": ["Aviation Aluminum Metal Ring", "9H Tempered Optical Clarity", "Zero Glare Flash Cutout"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/camera-lens-protector.svg"
+    },
+    {
+      "id": "apple-lightning-to-typec-cable",
+      "name": "Apple Original Type-C to Lightning 1m",
+      "brand": "Apple",
+      "condition": "New",
+      "price": 6200,
+      "specs": ["Official MFi Certified", "Supports PD Fast Charging", "Pure Copper Core"],
+      "stock": "low_stock",
+      "image": "assets/images/accessories/apple-lightning-cable.svg"
+    },
+    {
+      "id": "liquid-silicone-soft-case",
+      "name": "Liquid Silicone Soft-Touch Case",
+      "brand": "Oms",
+      "condition": "New",
+      "price": 2500,
+      "specs": ["Silky Soft Feel & Microfiber Lining", "Available in 12 Vivid Colors", "Drop & Scratch Resilient"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/silicone-case.svg"
+    },
+    {
+      "id": "baseus-power-bank-10000mah",
+      "name": "Baseus Blade 20W 10,000mAh Power Bank",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 9800,
+      "specs": ["Digital LED Percentage Display", "Ultra Slim Pocket Profile", "Dual Input & Output Ports"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/baseus-powerbank-10000.svg"
+    },
+    {
+      "id": "leather-wallet-magsafe-cardholder",
+      "name": "Magnetic Leather Wallet & Stand",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 4200,
+      "specs": ["RFID Blocking Technology", "Holds Up to 3 Cards Comfortably", "Foldable Multi-Angle Kickstand"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/magsafe-wallet.svg"
+    },
+    {
+      "id": "xiaomi-33w-fast-charger",
+      "name": "Xiaomi 33W SonicCharge 2.0 Adapter",
+      "brand": "Xiaomi",
+      "condition": "New",
+      "price": 5500,
+      "specs": ["QC 3.0 & Turbo Charge Supported", "Smart Voltage Regulation", "Compact Sri Lanka Pin Standard"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/xiaomi-33w-charger.svg"
+    },
+    {
+      "id": "baseus-audio-adapter-typec-35mm",
+      "name": "Baseus Type-C to 3.5mm DAC Adapter",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 3100,
+      "specs": ["High Fidelity Lossless DAC Chip", "Supports Mic & Volume In-Line", "Aluminum Alloy Shell"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/baseus-audio-adapter.svg"
+    },
+    {
+      "id": "waterproof-pouch-ipx8",
+      "name": "IPX8 Universal Waterproof Phone Pouch",
+      "brand": "Oms",
+      "condition": "New",
+      "price": 1800,
+      "specs": ["Certified 30m Underwater Seal", "High Sensitivity Touch Window", "Includes Heavy-Duty Lanyard"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/waterproof-pouch.svg"
+    },
+    {
+      "id": "gaming-finger-sleeves-pair",
+      "name": "Pro Gaming Conductive Finger Sleeves",
+      "brand": "Oms",
+      "condition": "New",
+      "price": 1200,
+      "specs": ["Silver Fiber High Sensitivity", "Sweat-Proof & Breathable", "Zero Friction Gliding"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/gaming-sleeves.svg"
+    },
+    {
+      "id": "desktop-folding-phone-stand",
+      "name": "Aluminum Alloy Foldable Desktop Stand",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 3800,
+      "specs": ["Dual Axis Multi-Angle Adjustment", "Weighted Anti-Skid Base", "Cable Passthrough for Charging"],
+      "stock": "in_stock",
+      "image": "assets/images/accessories/phone-stand.svg"
+    },
+    {
+      "id": "uv-light-sterilizer-box",
+      "name": "UV Smartphone Sanitizer & Wireless Charger",
+      "brand": "Oms",
+      "condition": "New",
+      "price": 8200,
+      "specs": ["99.9% Bacteria Sterilization", "Built-in 10W Wireless Charger", "Aromatherapy Diffuser Function"],
+      "stock": "out_of_stock",
+      "image": "assets/images/accessories/uv-sterilizer.svg"
+    }
+  ],
+  "gadgets": [
+    {
+      "id": "jbl-flip-6",
+      "name": "JBL Flip 6 Portable Bluetooth Speaker",
+      "brand": "JBL",
+      "condition": "New",
+      "price": 42000,
+      "specs": ["IP67 Waterproof & Dustproof", "12 Hours Playtime / JBL Pro Sound", "PartyBoost Multi-Speaker Link"],
+      "stock": "in_stock",
+      "badge": "Waterproof",
+      "image": "assets/images/gadgets/jbl-flip-6.svg"
+    },
+    {
+      "id": "sony-wh-1000xm5",
+      "name": "Sony WH-1000XM5 ANC Headphones",
+      "brand": "Sony",
+      "condition": "New",
+      "price": 118000,
+      "specs": ["Industry Leading Noise Canceling", "30-Hour Battery / Fast Charge", "Ultra-Comfort Lightweight Fit"],
+      "stock": "in_stock",
+      "badge": "Audiophile",
+      "image": "assets/images/gadgets/sony-wh1000xm5.svg"
+    },
+    {
+      "id": "soundcore-liberty-4-nc",
+      "name": "Soundcore Liberty 4 NC Wireless Earbuds",
+      "brand": "Soundcore",
+      "condition": "New",
+      "price": 28500,
+      "specs": ["98.5% Noise Reduction ANC 2.0", "Hi-Res Wireless LDAC Audio", "50-Hour Playtime with Case"],
+      "stock": "in_stock",
+      "badge": "Best Value ANC",
+      "image": "assets/images/gadgets/soundcore-liberty-4.svg"
+    },
+    {
+      "id": "apple-airpods-pro-2",
+      "name": "Apple AirPods Pro (2nd Gen Type-C)",
+      "brand": "Apple",
+      "condition": "New",
+      "price": 79500,
+      "specs": ["H2 Chip with Active Noise Cancellation", "Adaptive Audio & Transparency", "MagSafe Case (USB-C) with Speaker"],
+      "stock": "in_stock",
+      "badge": "Top Rated",
+      "image": "assets/images/gadgets/airpods-pro-2.svg"
+    },
+    {
+      "id": "samsung-galaxy-watch-6",
+      "name": "Samsung Galaxy Watch 6 44mm",
+      "brand": "Samsung",
+      "condition": "New",
+      "price": 68000,
+      "specs": ["Sapphire Crystal Super AMOLED", "Advanced Sleep & ECG Heart Tracking", "Wear OS Powered by Samsung"],
+      "stock": "in_stock",
+      "badge": "Smartwatch",
+      "image": "assets/images/gadgets/galaxy-watch-6.svg"
+    },
+    {
+      "id": "xiaomi-smart-band-8",
+      "name": "Xiaomi Smart Band 8 Active",
+      "brand": "Xiaomi",
+      "condition": "New",
+      "price": 13500,
+      "specs": ["1.62\" Vibrant AMOLED 60Hz", "150+ Sports Modes / SpO2 Tracker", "Up to 16 Days Battery Life"],
+      "stock": "in_stock",
+      "badge": "Fitness",
+      "image": "assets/images/gadgets/xiaomi-band-8.svg"
+    },
+    {
+      "id": "jbl-clip-4",
+      "name": "JBL Clip 4 Ultra-Portable Speaker",
+      "brand": "JBL",
+      "condition": "New",
+      "price": 21500,
+      "specs": ["Integrated Carabiner Clip", "Rich JBL Original Pro Sound", "10 Hours Battery / IP67 Rating"],
+      "stock": "low_stock",
+      "badge": "Compact",
+      "image": "assets/images/gadgets/jbl-clip-4.svg"
+    },
+    {
+      "id": "baseus-bowie-h1-pro",
+      "name": "Baseus Bowie H1 Pro ANC Headset",
+      "brand": "Baseus",
+      "condition": "New",
+      "price": 24000,
+      "specs": ["-48dB Hybrid Active Noise Cancellation", "Hi-Res Audio LHDC Certified", "70 Hours Ultra-Long Playtime"],
+      "stock": "in_stock",
+      "badge": "New Arrival",
+      "image": "assets/images/gadgets/baseus-bowie-h1.svg"
+    }
+  ]
+}

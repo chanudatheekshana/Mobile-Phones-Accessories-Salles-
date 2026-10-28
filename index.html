@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Mobile | Phones, Accessories, Gadgets & Expert Repairs</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="National Mobile - Connecting your world, powering your life. Discover genuine new & used smartphones, premium accessories, smart gadgets, and certified express mobile repair services in Sri Lanka." />
+  <meta name="keywords" content="National Mobile, smartphones, iPhone, Samsung, Xiaomi, mobile repair, phone shop Sri Lanka, Anuradhapura, phone accessories, AirPods, JBL" />
+  <meta property="og:title" content="National Mobile | Phones, Accessories & Repairs" />
+  <meta property="og:description" content="Connecting your world, powering your life. Genuine smartphones, gadgets, and express repair services." />
+  <meta property="og:image" content="assets/National_mobile-logo (1).png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Site Icon / Favicon -->
+  <link rel="icon" type="image/png" href="assets/Site Icon.png" />
+  <link rel="apple-touch-icon" href="assets/Site Icon.png" />
+
+  <!-- Google Fonts: Poppins (Headings) & Montserrat (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Schema.org LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobilePhoneStore",
+    "name": "National Mobile",
+    "image": "assets/National_mobile-logo (1).png",
+    "telephone": "+94775132961",
+    "email": "mohamedanfas974@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Court Complex, Side Kada 12",
+      "addressLocality": "Anuradhapura",
+      "addressCountry": "LK"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "09:00",
+        "closes": "20:30"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Background Ambient Glowing Blobs -->
+  <div class="ambient-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       1. Introduction Video Overlay (Preloader)
+       ========================================================================== -->
+  <div id="intro-overlay" role="dialog" aria-modal="true" aria-label="Welcome Introduction">
+    <div class="intro-container">
+      <div class="intro-controls">
+        <button id="btn-skip-intro" class="btn-skip-intro" aria-label="Skip Introduction Video">
+          <span>Skip Intro</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="intro-video-wrapper">
+        <video id="intro-video" src="assets/intro.mp4" playsinline muted autoplay></video>
+        <div class="intro-progress-bar" id="intro-progress-bar"></div>
+      </div>
+
+      <div class="intro-brand-caption">
+        <img src="assets/Site Icon.png" alt="National Mobile Icon" />
+        <span>NATIONAL MOBILE &bull; WELCOME TO THE FUTURE OF TECH</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. Sticky Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo-link" aria-label="National Mobile Home">
+          <div class="logo-badge">
+            <img src="assets/National_mobile-logo (1).png" alt="National Mobile Logo" class="logo-img" />
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#phones" class="nav-link" role="menuitem">Phones</a></li>
+          <li role="none"><a href="#accessories" class="nav-link" role="menuitem">Accessories</a></li>
+          <li role="none"><a href="#gadgets" class="nav-link" role="menuitem">Gadgets</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <!-- Right Action Items -->
+        <div class="nav-actions">
+          <!-- Prominent Solid Blue Pill Button for Repair Form -->
+          <button type="button" class="btn-primary btn-sweep open-repair-modal" aria-haspopup="dialog">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+            </svg>
+            <span>Repair Your Mobile</span>
+          </button>
+
+          <!-- WhatsApp Quick Link -->
+          <a href="https://wa.me/94775132961" target="_blank" rel="noopener" class="icon-btn" aria-label="Chat on WhatsApp" title="WhatsApp Enquiry">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.86 7.34C8.63 7.6 7.99 8.2 7.99 9.42C7.99 10.64 8.88 11.82 9.01 11.99C9.13 12.16 10.74 14.65 13.21 15.72C15.27 16.6 15.69 16.43 16.14 16.39C16.59 16.35 17.58 15.8 17.78 15.23C17.98 14.67 17.98 14.18 17.92 14.08C17.86 13.98 17.71 13.92 17.48 13.81C17.25 13.69 16.13 13.14 15.92 13.06C15.71 12.98 15.56 12.94 15.41 13.17C15.26 13.4 14.83 13.92 14.7 14.08C14.57 14.23 14.45 14.25 14.22 14.14C13.99 14.02 13.06 13.72 11.95 12.73C11.09 11.96 10.51 11.01 10.28 10.62C10.05 10.23 10.26 10.02 10.37 9.9C10.47 9.8 10.6 9.64 10.71 9.5C10.83 9.36 10.87 9.26 10.95 9.1C11.03 8.94 10.99 8.8 10.93 8.68C10.87 8.56 10.42 7.45 10.23 7C10.05 6.56 9.87 6.62 9.73 6.61C9.6 6.61 9.45 6.61 9.3 6.61L9.53 7.03Z"/>
+            </svg>
+          </a>
+
+          <!-- Call Quick Link -->
+          <a href="tel:+94775132961" class="icon-btn" aria-label="Call Shop" title="Call Us Direct">
+            <svg viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </a>
+
+          <!-- Theme Toggle (Light / Dark) -->
+          <button type="button" id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Color Theme">
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg class="icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg class="icon-moon" viewBox="0 0 24 24" style="display:none;">
+              <path d="M12.3 2a10 10 0 0 0-1.9 19.8 9.9 9.9 0 0 0 9.8-12.7 10 10 0 0 1-7.9-7.1z"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Glass Sheet -->
+  <div class="mobile-sheet" id="mobile-sheet" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home <span>&rarr;</span></a></li>
+      <li><a href="#phones" class="mobile-nav-link">Phones <span>&rarr;</span></a></li>
+      <li><a href="#accessories" class="mobile-nav-link">Accessories <span>&rarr;</span></a></li>
+      <li><a href="#gadgets" class="mobile-nav-link">Gadgets <span>&rarr;</span></a></li>
+      <li><a href="#about" class="mobile-nav-link">About Us <span>&rarr;</span></a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact <span>&rarr;</span></a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <button type="button" class="btn-primary open-repair-modal" style="width: 100%;">
+        Repair Your Mobile
+      </button>
+      <a href="https://wa.me/94775132961" target="_blank" rel="noopener" class="btn-secondary" style="width: 100%;">
+        WhatsApp Enquiry
+      </a>
+      <a href="tel:+94775132961" class="btn-secondary" style="width: 100%;">
+        Call +94 77 513 2961
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3. Brand Logo Strip (Continuous Left-to-Right Scrolling Marquee)
+       ========================================================================== -->
+  <section class="brand-strip-section" aria-label="Brands We Deal With">
+    <div class="brand-strip-wrapper">
+      <div class="brand-track">
+        <span class="brand-item"><img src="assets/brand-logos/samsung.png" alt="Samsung"></span>
+        <span class="brand-item"><img src="assets/brand-logos/apple.png" alt="Apple"></span>
+        <span class="brand-item"><img src="assets/brand-logos/xiaomi.webp" alt="Xiaomi"></span>
+        <span class="brand-item"><img src="assets/brand-logos/poco.jpg" alt="Poco"></span>
+        <span class="brand-item"><img src="assets/brand-logos/redmi.png" alt="Redmi"></span>
+        <span class="brand-item"><img src="assets/brand-logos/vivo.png" alt="Vivo"></span>
+        <span class="brand-item"><img src="assets/brand-logos/oppo.png" alt="Oppo"></span>
+        <span class="brand-item"><img src="assets/brand-logos/infinix.png" alt="Infinix"></span>
+        <span class="brand-item"><img src="assets/brand-logos/honor.png" alt="Honor"></span>
+        <span class="brand-item"><img src="assets/brand-logos/realme.png" alt="Realme"></span>
+        <span class="brand-item"><img src="assets/brand-logos/jbl.jpg" alt="JBL"></span>
+        <span class="brand-item"><img src="assets/brand-logos/soundcore.png" alt="Soundcore"></span>
+        <span class="brand-item"><img src="assets/brand-logos/sony.png" alt="Sony"></span>
+        <span class="brand-item"><img src="assets/brand-logos/baseus.png" alt="Baseus"></span>
+        <span class="brand-item"><img src="assets/brand-logos/oms.png" alt="OMS"></span>
+
+        <!-- Duplicated for seamless continuous loop -->
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/samsung.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/apple.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/xiaomi.webp" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/poco.jpg" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/redmi.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/vivo.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/oppo.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/infinix.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/honor.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/realme.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/jbl.jpg" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/soundcore.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/sony.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/baseus.png" alt=""></span>
+        <span class="brand-item" aria-hidden="true"><img src="assets/brand-logos/oms.png" alt=""></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Hero Section with Looping Cover Video
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Looping Cover Video (Site Cover video .mp4) -->
+    <video class="hero-video-bg" src="assets/Site Cover video .mp4" autoplay loop muted playsinline></video>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-pill">
+        <span class="hero-badge-dot"></span>
+        <span>Your Trusted Tech Partner &bull; Anuradhapura, Sri Lanka</span>
+      </div>
+
+      <h1 class="hero-title">Connecting Your World, Powering Your Life.</h1>
+      
+      <p class="hero-tagline">
+        Discover the latest authentic smartphones, precision certified repairs, and premium audio & charging accessories at National Mobile.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#phones" class="btn-primary hero-btn-primary btn-sweep">
+          <span>Shop Phones</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn-secondary hero-btn-secondary">
+          <span>Visit Our Shop</span>
+        </a>
+        <button type="button" class="btn-secondary hero-btn-secondary open-repair-modal">
+          <span>Book Repair</span>
+        </button>
+      </div>
+
+      <!-- Quick Trust Indicators -->
+      <div class="hero-features">
+        <div class="hero-feature-card">
+          <div class="hero-feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>100% Genuine</h4>
+            <p>Authentic brand warranties</p>
+          </div>
+        </div>
+
+        <div class="hero-feature-card">
+          <div class="hero-feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Express Repairs</h4>
+            <p>Same-day screen & battery</p>
+          </div>
+        </div>
+
+        <div class="hero-feature-card">
+          <div class="hero-feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Island-Wide Delivery</h4>
+            <p>Fast and safe dispatch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Mobile Phones Section (#phones)
+       ========================================================================== -->
+  <section class="section" id="phones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flagship & Pre-Owned</span>
+        <h2 class="section-title">Mobile Phones</h2>
+        <p class="section-subtitle">
+          Explore genuine flagship phones and rigorously certified pre-owned devices with comprehensive warranty.
+        </p>
+      </div>
+
+      <!-- Populated dynamically via js/products.js from data/products.json -->
+      <div class="product-grid" id="phones-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. Accessories Section (#accessories)
+       ========================================================================== -->
+  <section class="section" id="accessories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Power, Protection & Audio</span>
+        <h2 class="section-title">Mobile Accessories</h2>
+        <p class="section-subtitle">
+          High-performance GaN chargers, braided cables, MagSafe cases, and armored screen protectors.
+        </p>
+      </div>
+
+      <!-- Shows initial 8 cards, expands to all 20 cards on click -->
+      <div class="product-grid" id="accessories-grid"></div>
+
+      <div class="show-more-box">
+        <button type="button" class="btn-secondary btn-sweep" id="toggle-accessories-btn">
+          Show All 20 Accessories &darr;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. Gadgets Section (#gadgets)
+       ========================================================================== -->
+  <section class="section" id="gadgets">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Audio, Wearables & Smart Life</span>
+        <h2 class="section-title">Smart Gadgets</h2>
+        <p class="section-subtitle">
+          Immersive Bluetooth speakers, audiophile ANC headphones, smartwatches, and fitness trackers.
+        </p>
+      </div>
+
+      <div class="product-grid" id="gadgets-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. About Us Section (#about)
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Philosophy</span>
+        <h2 class="section-title">About National Mobile</h2>
+        <p class="section-subtitle">
+          Your trusted destination for genuine mobile technology and precision repair craftsmanship in Sri Lanka.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-story">
+          <blockquote class="about-tagline-quote">
+            "Connecting your world, powering your life."
+          </blockquote>
+          <p>
+            At <strong>National Mobile</strong>, we believe staying connected should be effortless, reliable, and accessible. Founded with a dedication to authenticity, we curate only genuine smartphones, manufacturer-certified accessories, and innovative smart gadgets from world-renowned brands.
+          </p>
+          <p>
+            Beyond retail, our workshop is staffed by certified technicians trained in microscopic solder work, original screen restorations, and precision battery replacements. Whether you are upgrading to the latest flagship or repairing a treasured device, we provide honest advice and unmatched warranty care.
+          </p>
+          <div>
+            <button type="button" class="btn-primary open-repair-modal">
+              Schedule a Repair Consultation &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="about-tiles-grid">
+          <!-- Tile 1: Genuine Products -->
+          <div class="about-tile">
+            <div class="tile-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+              </svg>
+            </div>
+            <h3>Genuine Products</h3>
+            <p>100% original boxed units with serial verification and official manufacturer warranties.</p>
+          </div>
+
+          <!-- Tile 2: Expert Repairs -->
+          <div class="about-tile">
+            <div class="tile-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+              </svg>
+            </div>
+            <h3>Expert Repairs</h3>
+            <p>Level 4 micro-soldering, authentic display replacements, and prompt diagnostics.</p>
+          </div>
+
+          <!-- Tile 3: New & Used Phones -->
+          <div class="about-tile">
+            <div class="tile-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+              </svg>
+            </div>
+            <h3>New & Used Phones</h3>
+            <p>Strict 30-point performance and battery inspection on every certified pre-owned smartphone.</p>
+          </div>
+
+          <!-- Tile 4: Friendly Service -->
+          <div class="about-tile">
+            <div class="tile-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+              </svg>
+            </div>
+            <h3>Friendly Service</h3>
+            <p>Warm customer care, transparent repair billing, and trusted after-sales support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. Contact & Location Section (#contact)
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Find & Connect</span>
+        <h2 class="section-title">Visit Our Shop & Contact Us</h2>
+        <p class="section-subtitle">
+          Conveniently located in Anuradhapura. Reach out via WhatsApp, phone, or stop by our store.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Google Map Card -->
+        <div class="glass-panel map-card">
+          <div class="map-frame-wrapper">
+            <iframe 
+              title="National Mobile Shop Location Map" 
+              src="https://www.google.com/maps?q=National+Mobile+Shop,+Court+Complex,+Side+Kada+12,+Anuradhapura,+Sri+Lanka&ll=6.9009408,79.8916608&z=16&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="map-footer-bar">
+            <div>
+              <strong>National Mobile Shop</strong><br />
+              <small style="color: var(--text-secondary);">Court Complex, Side Kada 12, Anuradhapura, Sri Lanka</small>
+            </div>
+            <a href="https://maps.app.goo.gl/5JZt58oseKwx29fY7?g_st=ac" target="_blank" rel="noopener" class="btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">
+              Get Directions &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Cards List -->
+        <div class="contact-info-list">
+          <!-- WhatsApp -->
+          <a href="https://wa.me/94775132961" target="_blank" rel="noopener" class="contact-card-item">
+            <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.15); color: #25D366;">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.86 7.34C8.63 7.6 7.99 8.2 7.99 9.42C7.99 10.64 8.88 11.82 9.01 11.99C9.13 12.16 10.74 14.65 13.21 15.72C15.27 16.6 15.69 16.43 16.14 16.39C16.59 16.35 17.58 15.8 17.78 15.23C17.98 14.67 17.98 14.18 17.92 14.08C17.86 13.98 17.71 13.92 17.48 13.81C17.25 13.69 16.13 13.14 15.92 13.06C15.71 12.98 15.56 12.94 15.41 13.17C15.26 13.4 14.83 13.92 14.7 14.08C14.57 14.23 14.45 14.25 14.22 14.14C13.99 14.02 13.06 13.72 11.95 12.73C11.09 11.96 10.51 11.01 10.28 10.62C10.05 10.23 10.26 10.02 10.37 9.9C10.47 9.8 10.6 9.64 10.71 9.5C10.83 9.36 10.87 9.26 10.95 9.1C11.03 8.94 10.99 8.8 10.93 8.68C10.87 8.56 10.42 7.45 10.23 7C10.05 6.56 9.87 6.62 9.73 6.61C9.6 6.61 9.45 6.61 9.3 6.61L9.53 7.03Z"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>WhatsApp Hotline</h4>
+              <p>+94 77 513 2961</p>
+            </div>
+            <span class="contact-card-action">Chat Now &rarr;</span>
+          </a>
+
+          <!-- Direct Phone -->
+          <a href="tel:+94775132961" class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>Phone Support</h4>
+              <p>+94 77 513 2961</p>
+            </div>
+            <span class="contact-card-action">Call &rarr;</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:mohamedanfas974@gmail.com" class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>Email Inquiries</h4>
+              <p>mohamedanfas974@gmail.com</p>
+            </div>
+            <span class="contact-card-action">Email &rarr;</span>
+          </a>
+
+          <!-- Opening Hours -->
+          <div class="contact-card-item" style="cursor: default;">
+            <div class="contact-card-icon" style="background: rgba(245, 158, 11, 0.15); color: #F59E0B;">
+              <svg viewBox="0 0 24 24">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>Opening Hours</h4>
+              <p>Mon - Sat: 9:00 AM - 8:30 PM<br />Sunday: 9:00 AM - 8:30 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. Repair Your Mobile Form (Modal Dialog)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="repair-modal" role="dialog" aria-modal="true" aria-labelledby="repair-modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="close-repair-modal" aria-label="Close Repair Form">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="section-tag">National Mobile Service</span>
+        <h2 id="repair-modal-title">Repair Your Mobile</h2>
+        <p>Book an express repair with certified technicians. We diagnose and restore your phone quickly.</p>
+      </div>
+
+      <div id="repair-alert" class="form-alert"></div>
+
+      <form id="repair-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Hidden Honeypot to block spam bots as specified in plan -->
+        <input type="text" name="_honeypot" class="honeypot-field" tabindex="-1" autocomplete="off" />
+
+        <div class="form-group">
+          <label class="form-label" for="repair-name">Full Name <span class="required">*</span></label>
+          <input type="text" id="repair-name" name="name" class="form-control" placeholder="e.g. Kasun Perera" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="repair-phone">Phone Number (WhatsApp preferred) <span class="required">*</span></label>
+          <input type="tel" id="repair-phone" name="phone" class="form-control" placeholder="e.g. 077 123 4567" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="repair-email">Email Address <span style="font-weight:400; color:var(--text-muted);">(Optional)</span></label>
+          <input type="email" id="repair-email" name="email" class="form-control" placeholder="e.g. name@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="repair-model">Brand & Model <span class="required">*</span></label>
+          <input type="text" id="repair-model" name="model" class="form-control" placeholder="e.g. Samsung Galaxy A14 / iPhone 13" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="repair-problem">Problem Type <span class="required">*</span></label>
+          <select id="repair-problem" name="problem" class="form-control" required>
+            <option value="" disabled selected>Select an issue...</option>
+            <option value="Screen Replacement">Screen Replacement / Cracked Glass</option>
+            <option value="Battery Health & Replacement">Battery Draining / Battery Health</option>
+            <option value="Water Damage Repair">Water / Liquid Damage</option>
+            <option value="Charging Port Issue">Charging Port / Loose Connection</option>
+            <option value="Software & Bootloop">Software / Unlocking / Bootloop</option>
+            <option value="Camera & Lens">Camera Blur / Broken Lens</option>
+            <option value="Speaker & Mic">Speaker / Microphone / Audio</option>
+            <option value="Other Hardware Issue">Other Issue</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="repair-details">Describe the Problem <span style="font-weight:400; color:var(--text-muted);">(Optional)</span></label>
+          <textarea id="repair-details" name="details" class="form-control" rows="3" placeholder="Tell us what happened or any specific symptoms..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-sweep" style="width: 100%; padding: 14px; font-size: 1rem;">
+          Submit Repair Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       11. Product Reservation Modal (Dialog)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="reserve-modal" role="dialog" aria-modal="true" aria-labelledby="reserve-modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="close-reserve-modal" aria-label="Close Reservation Form">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="section-tag">Instant Hold</span>
+        <h2 id="reserve-modal-title">Reserve This Item</h2>
+        <p id="reserve-product-title" style="font-weight:600; color:var(--color-primary);"></p>
+      </div>
+
+      <div id="reserve-alert" class="form-alert"></div>
+
+      <form id="reserve-form">
+        <input type="text" name="_honeypot" class="honeypot-field" tabindex="-1" autocomplete="off" />
+        <input type="hidden" name="product_name" />
+        <input type="hidden" name="product_price" />
+
+        <div class="form-group">
+          <label class="form-label" for="reserve-cust-name">Your Full Name <span class="required">*</span></label>
+          <input type="text" id="reserve-cust-name" name="customer_name" class="form-control" placeholder="e.g. Kasun Perera" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reserve-cust-phone">Your Phone Number <span class="required">*</span></label>
+          <input type="tel" id="reserve-cust-phone" name="customer_phone" class="form-control" placeholder="e.g. 077 123 4567" required />
+        </div>
+
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 18px;">
+          Reserving holds this item for you at National Mobile. No payment required online. We will confirm availability instantly on WhatsApp.
+        </p>
+
+        <button type="submit" class="btn-primary btn-sweep" style="width: 100%; padding: 14px; font-size: 1rem;">
+          Confirm Reservation on WhatsApp &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       12. Floating WhatsApp Button
+       ========================================================================== -->
+  <aside>
+    <a href="https://wa.me/94775132961" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat with National Mobile on WhatsApp">
+      <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+      <div class="whatsapp-bubble">
+        <div class="whatsapp-pulse"></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.86 7.34C8.63 7.6 7.99 8.2 7.99 9.42C7.99 10.64 8.88 11.82 9.01 11.99C9.13 12.16 10.74 14.65 13.21 15.72C15.27 16.6 15.69 16.43 16.14 16.39C16.59 16.35 17.58 15.8 17.78 15.23C17.98 14.67 17.98 14.18 17.92 14.08C17.86 13.98 17.71 13.92 17.48 13.81C17.25 13.69 16.13 13.14 15.92 13.06C15.71 12.98 15.56 12.94 15.41 13.17C15.26 13.4 14.83 13.92 14.7 14.08C14.57 14.23 14.45 14.25 14.22 14.14C13.99 14.02 13.06 13.72 11.95 12.73C11.09 11.96 10.51 11.01 10.28 10.62C10.05 10.23 10.26 10.02 10.37 9.9C10.47 9.8 10.6 9.64 10.71 9.5C10.83 9.36 10.87 9.26 10.95 9.1C11.03 8.94 10.99 8.8 10.93 8.68C10.87 8.56 10.42 7.45 10.23 7C10.05 6.56 9.87 6.62 9.73 6.61C9.6 6.61 9.45 6.61 9.3 6.61L9.53 7.03Z"/>
+        </svg>
+      </div>
+    </a>
+  </aside>
+
+  <!-- ==========================================================================
+       13. Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-badge" style="display:inline-flex;">
+            <img src="assets/National_mobile-logo (1).png" alt="National Mobile" class="logo-img" />
+          </div>
+          <p>
+            <em>Connecting your world, powering your life.</em><br />
+            Sri Lanka's dedicated hub for genuine smartphones, premium gadgets, and certified express repairs.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#phones">Flagship Phones</a></li>
+            <li><a href="#phones">Certified Pre-Owned</a></li>
+            <li><a href="#accessories">Fast Chargers & Cables</a></li>
+            <li><a href="#accessories">Cases & Screen Guards</a></li>
+            <li><a href="#gadgets">Audio & Smart Wearables</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services & Support</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Our Shop</a></li>
+            <li><a href="#" class="open-repair-modal">Repair Your Mobile</a></li>
+            <li><a href="https://wa.me/94775132961" target="_blank" rel="noopener">WhatsApp Inquiries</a></li>
+            <li><a href="#contact">Location & Directions</a></li>
+            <li><a href="#contact">Store Opening Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Court Complex, Side Kada 12, Anuradhapura, Sri Lanka</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+94775132961" style="color:#94a3b8;">+94 77 513 2961</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:mohamedanfas974@gmail.com" style="color:#94a3b8;">mohamedanfas974@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 National Mobile. All rights reserved. Connecting your world, powering your life.
+        </div>
+        <div>
+          <button type="button" class="btn-replay-intro" id="btn-replay-intro">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+            </svg>
+            <span>Replay Intro Video</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/repair-form.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
